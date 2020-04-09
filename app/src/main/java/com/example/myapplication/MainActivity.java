@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Log.d("TAG", "onClick: inside the button encrypt" );
-                Intent i = new Intent(getApplicationContext(),EncryptActivity.class);
+                Intent i = new Intent(getApplicationContext(),SplashScreenActivity.class);
                 startActivity(i);
             }
         });
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),DecryptActivity.class);
+                Intent i = new Intent(getApplicationContext(),SplashScreenActivity.class);
                 startActivity(i);
                 Log.d("TAG", "onClick: inside the button decrypt" );
             }

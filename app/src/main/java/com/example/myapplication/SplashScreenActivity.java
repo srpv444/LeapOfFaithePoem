@@ -7,11 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+    public Integer splashTime = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
         getSupportActionBar().hide();
 
         new Handler().postDelayed(new Runnable() {
@@ -22,7 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 5000);
+        }, splashTime);
 
     }
 }
